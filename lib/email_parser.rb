@@ -14,6 +14,6 @@ class EmailParser
     #  email.delete(",")
     #end.uniq
     #emails.split(",").join(" ").split(" ").uniq
-    emails.split(/[\s,]+/)
+    emails.split(/[\s,]+/).uniq
   end
 end
